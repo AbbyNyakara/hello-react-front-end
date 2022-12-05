@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Greeting from './components/greeting';
 import store from './redux/configureStore';
 

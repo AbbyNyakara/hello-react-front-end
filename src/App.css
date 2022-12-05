@@ -1,2 +1,7 @@
 /* eslint-disable no-empty-source */
 /* eslint-disable  no-missing-end-of-source-newline*/
+
+* {
+  padding: 0;
+}
+
