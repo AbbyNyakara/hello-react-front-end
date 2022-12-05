@@ -6,7 +6,6 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const GET_ALL = 'message/GET_ALL';
 const initialState = [];
-
 export const fetchAllMessages = createAsyncThunk(
 	GET_ALL,
 	async (all, thunkAPI) => {
@@ -22,8 +21,8 @@ const messagesSlice = createSlice({
 	initialState,
 	reducers: {},
 	extraReducers: {
+		// eslint-disable-next-line arrow-body-style
 		[fetchAllMessages.fulfilled]: (state, action) => {
-			console.log(state);
 			return action.payload.message;
 		},
 	},
